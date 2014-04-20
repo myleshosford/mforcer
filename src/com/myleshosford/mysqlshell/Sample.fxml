@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="557.0" prefWidth="710.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.myleshosford.mysqlshell.SampleController">
+  <children>
+    <TabPane prefHeight="511.0" prefWidth="622.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab text="Brute Force">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="521.0" prefWidth="719.0">
+              <children>
+                <Text fill="#210066" fontSmoothingType="GRAY" layoutX="161.0" layoutY="69.0" scaleX="6.300755771819029" scaleY="6.747671896925628" strikethrough="false" strokeType="OUTSIDE" strokeWidth="0.0" text="MForcer" underline="false">
+                  <font>
+                    <Font name="American Typewriter" size="13.0" />
+                  </font>
+                </Text>
+                <Pane id="" layoutX="376.0" layoutY="39.0" prefHeight="219.0" prefWidth="320.0000999999975">
+                  <children>
+                    <ToggleButton id="startButton" fx:id="startbutton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleStartButtonAction" text="Start" textOverrun="CLIP" />
+                    <ProgressBar fx:id="progress" layoutX="7.0" layoutY="151.0" prefWidth="307.0" progress="0.0" />
+                  </children>
+                </Pane>
+                <Pane layoutX="14.0" layoutY="115.0" prefHeight="153.0" prefWidth="354.0">
+                  <children>
+                    <Label layoutX="14.0" layoutY="91.0" prefHeight="22.0" prefWidth="99.0" text="User" />
+                    <TextField layoutX="186.0" layoutY="51.0" prefWidth="67.0" text="8080" />
+                    <TextField layoutX="53.0" layoutY="51.0" prefWidth="133.0" text="myleshosford.com" />
+                    <TextField layoutX="53.0" layoutY="91.0" prefWidth="200.0" text="/tmp/users.txt" />
+                    <TextField layoutX="53.0" layoutY="121.0" prefWidth="200.0" text="/tmp/pass.txt" />
+                    <Label layoutX="14.0" layoutY="51.0" prefHeight="22.0" prefWidth="99.0" text="Host" />
+                    <ChoiceBox layoutX="14.0" layoutY="14.0" prefWidth="239.0">
+                      <items>
+                        <FXCollections fx:factory="observableArrayList">
+                          <String fx:value="Item 1" />
+                          <String fx:value="Item 2" />
+                          <String fx:value="Item 3" />
+                        </FXCollections>
+                      </items>
+                    </ChoiceBox>
+                    <Label layoutX="14.0" layoutY="121.0" prefHeight="22.0" prefWidth="99.0" text="Pass" />
+                    <Button layoutX="262.0" layoutY="121.0" mnemonicParsing="false" text="Add" />
+                  </children>
+                </Pane>
+                <TableView fx:id="tableview" layoutX="28.0" layoutY="268.0" prefHeight="239.0" prefWidth="662.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Command Exec">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
