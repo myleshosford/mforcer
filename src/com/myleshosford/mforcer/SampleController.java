@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.myleshosford.mysqlshell;
+package com.myleshosford.mforcer;
 
 import java.net.URL;
 import java.util.ResourceBundle;

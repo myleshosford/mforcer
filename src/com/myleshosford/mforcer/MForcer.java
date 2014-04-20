@@ -1,4 +1,4 @@
-package com.myleshosford.mysqlshell;
+package com.myleshosford.mforcer;
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -13,7 +13,7 @@ import javafx.stage.WindowEvent;
  *
  * @author Myles Hosford
  */
-public class MySqlShell extends Application {
+public class MForcer extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {

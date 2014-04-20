@@ -1,4 +1,4 @@
-package com.myleshosford.mysqlshell;
+package com.myleshosford.mforcer;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ import javafx.concurrent.Task;
  *
  * @author Myles Hosford
  */
-public class MySqlTask extends Task<String> {
+public class MForcerTask extends Task<String> {
 
     @Override
     protected String call() throws Exception {
